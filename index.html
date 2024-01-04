@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+
+    <style>
+      label {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      input[type="date"] {
+        font-size: 25px;
+        background-color: orange;
+      }
+      input[type="date"]::-webkit-datetime-edit {
+        padding: 10px;
+      }
+      input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+        background-color: yellow;
+      }
+      input[type="date"]::-webkit-datetime-edit-text {
+        color: red;
+      }
+      input[type="date"]::-webkit-datetime-edit-month-field {
+        color: blue;
+      }
+      input[type="date"]::-webkit-datetime-edit-day-field {
+        color: green;
+      }
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        background-color: yellow;
+        margin-right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <label>DOB: </label>
+    <input type="date" placeholder="date" max="2010-12-31" />
+  </body>
+</html>
